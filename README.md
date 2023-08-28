@@ -1,4 +1,4 @@
-# Gridworld_with_Reinforcement_learning
+# Gridworld with Reinforcement learning
 A simple gridworld environment and an agent that can navigate through it using Q-learning. We set up the environment, define the agent, and then train the agent.
 
 1. The Gridworld Environment:
