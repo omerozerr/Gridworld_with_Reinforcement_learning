@@ -1,14 +1,14 @@
-# Gridworld with Reinforcement learning
-A simple gridworld environment and an agent that can navigate through it using Q-learning. We set up the environment, define the agent, and then train the agent.
 
-1. The Gridworld Environment:
--A 10x10 grid.
--Start position at the top-left corner.
--Instead of a single goal, we have multiple goals with different rewards.
--A few obstacles in between.
+Gridworld with Reinforcement Learning
+A simple gridworld environment and an agent that navigates through it using Q-learning. We set up the environment, define the agent, and then train the agent.
 
-2. The Agent:
--Can move up, down, left, or right.
--Will use Q-learning to learn the optimal policy.
--Sometimes, when the agent decides to take an action, the environment may not necessarily respond as expected. For instance, if the agent decides to move right, there might be a small chance it ends up moving up instead. (slip_prob)
--As the agent learns more about its environment, it should rely less on exploration and more on exploiting the knowledge it has gathered. (decay_epsilon)
+1. The Gridworld Environment
+Grid Size: A 10x10 grid.
+Start Position: Positioned at the top-left corner.
+Goals: Instead of a single goal, we have multiple goals with varying rewards.
+Obstacles: The grid contains a few obstacles the agent must navigate around.
+2. The Agent
+Movements: The agent can move up, down, left, or right.
+Learning Method: Employs Q-learning to deduce the optimal policy.
+Stochastic Environment: Sometimes, the agent's chosen action might not result in the expected movement. For instance, if the agent opts to move right, there's a slight possibility it could end up moving up. This is governed by slip_prob.
+Exploration vs. Exploitation: As the agent becomes more familiar with its environment, it increasingly depends on exploiting its accumulated knowledge, decreasing its exploration rate. This is controlled by decay_epsilon.
